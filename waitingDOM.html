@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let container = document.getElementById("container");
+        container.innerText = "Hello World"; // It will not show anything!
+    </script>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+</body>
+</html>
+
+<!--What's going on here?? Well, since our script tag is running before the DOM has loaded, it has no idea 
+what the <div id="container"></div> is! What we can do is wait for the DOM to load before executing any 
+JavaScript. This can be done either with the 'load' event or the 'DOMContentLoaded' event.-->
+
